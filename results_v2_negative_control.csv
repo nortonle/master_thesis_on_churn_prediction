@@ -1,0 +1,8 @@
+negative-control check,result
+Noise-block columns,12 of 38  (31.6% of columns)
+Share of total SHAP attribution,1.97%
+Influence relative to the average feature,0.062x  (PASS — criterion < 0.5x)
+"Median importance rank, noise block",24 of 38  (PASS — criterion > 19)
+"Median importance rank, signal block",14
+Highest-ranked noise feature,has_streaming_movies (rank 17)
+OVERALL,PASS

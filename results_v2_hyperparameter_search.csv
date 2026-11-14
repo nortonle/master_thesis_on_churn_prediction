@@ -1,0 +1,13 @@
+model,strategy,best_cv_auc,auc_at_grid_budget,search_seconds,n_configs,n_fits,seconds_per_fit,best_params
+LogisticRegression,GridSearch,0.6884403559337601,0.6884403559337601,8.795160916997702,5,15,0.5863440611331802,"{""C"": 0.01}"
+LogisticRegression,RandomSearch,0.6886311577045278,0.6885080407808027,47.7148995000025,30,90,0.5301655500000279,"{""C"": 0.00171}"
+DecisionTree,GridSearch,0.6684420811393524,0.6684420811393524,39.211947791001876,12,36,1.0892207719722744,"{""max_depth"": 6, ""min_samples_leaf"": 500}"
+DecisionTree,RandomSearch,0.6695381746085802,0.6695381746085802,99.10168350000458,30,90,1.1011298166667176,"{""max_depth"": 6, ""min_samples_leaf"": 673}"
+RandomForest,GridSearch,0.6837948168240834,0.6837948168240834,158.11854495799344,12,36,4.392181804388707,"{""max_depth"": 8, ""min_samples_leaf"": 30, ""n_estimators"": 300}"
+RandomForest,RandomSearch,0.6822476933265248,0.6822476933265248,1661.491072416,30,90,18.461011915733334,"{""max_depth"": 14, ""max_features"": 0.328, ""min_samples_leaf"": 62, ""n_estimators"": 370}"
+XGBoost,GridSearch,0.6851803467716039,0.6851803467716039,46.85039904199948,12,36,1.3013999733888744,"{""learning_rate"": 0.05, ""max_depth"": 3, ""n_estimators"": 200}"
+XGBoost,RandomSearch,0.6857751782115179,0.6845521204814968,131.5797096669994,30,90,1.4619967740777713,"{""colsample_bytree"": 0.63607, ""learning_rate"": 0.09051, ""max_depth"": 2, ""n_estimators"": 215, ""reg_lambda"": 1.83572, ""subsample"": 0.72191}"
+LogisticRegression,Optuna,0.6886361224351397,0.6885080407808027,40.143048375000944,30,78,0.514654466346166,"{""C"": 0.00215}"
+DecisionTree,Optuna,0.669057826558843,0.6688285244629494,84.23537450000003,30,80,1.0529421812500004,"{""max_depth"": 8, ""min_samples_leaf"": 659}"
+RandomForest,Optuna,0.6829048748304021,0.6824524710594385,1363.4463752080046,30,80,17.043079690100058,"{""n_estimators"": 350, ""max_depth"": 9, ""min_samples_leaf"": 88, ""max_features"": 0.42758}"
+XGBoost,Optuna,0.6865752244897294,0.6857081656179531,102.605370958001,30,84,1.2214925114047739,"{""max_depth"": 2, ""learning_rate"": 0.04859, ""n_estimators"": 250, ""subsample"": 0.64526, ""colsample_bytree"": 0.8429, ""reg_lambda"": 12.70619}"

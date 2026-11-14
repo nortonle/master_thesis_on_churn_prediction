@@ -1,0 +1,3 @@
+comparison,extra_monthly_compute_usd,value_per_captured_churner_usd,extra_captures_needed_per_month,champion_captures,dl_captures_actual,dl_captures_required,required_capture_uplift_pct,actual_capture_uplift_pct,break_even_met
+ANN vs LogisticRegression,1314.0006960788878,215.49912536192582,6.09747577337984,6891.25,6835.9,6897.34747577338,0.08848141880470894,-0.8031924541991753,False
+DNN vs LogisticRegression,1314.0020940007862,215.49912536192582,6.097482260282727,6891.25,6950.499999999999,6897.347482260283,0.08848151293716633,0.8597859604570823,True

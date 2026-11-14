@@ -1,0 +1,7 @@
+prediction,measurement,verdict
+1. Log-odds linearity,mean R2 = 0.952 across the top drivers,SUPPORTED
+2. Non-linearity gain (splines),+0.00050 AUC,SUPPORTED
+3. Interaction gain,-0.00055 AUC,SUPPORTED
+4. Flexible models converge on the champion,"champion vs flexible models: min rho = 0.9727, 89% campaign overlap",SUPPORTED
+"5. Flexible models converge towards, not materially past, the champion","champion gains only +0.01424 AUC across a 40x increase in data; DNN still rising (+0.00729 in the final step) and +0.00490 behind; largest excess by any flexible model is +0.00051 AUC, below the 0.005 materiality threshold",SUPPORTED
+6. Ceiling is intrinsic to the signal,"best univariate AUC 0.614, best model 0.686, whole field within 0.0144",SUPPORTED
