@@ -1,0 +1,15 @@
+library,version
+numpy,1.26.4
+pandas,2.2.2
+sklearn,1.8.0
+scipy,1.13.1
+matplotlib,3.9.2
+seaborn,0.13.2
+xgboost,3.2.0
+imblearn,0.14.1
+optuna,4.8.0
+shap,0.46.0
+tensorflow,2.16.2
+ctgan,0.11.0
+statsmodels,0.14.2
+tensorflow-metal,1.2.0

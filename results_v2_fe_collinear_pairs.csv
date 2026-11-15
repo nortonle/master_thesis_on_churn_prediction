@@ -1,0 +1,7 @@
+feature_a,feature_b,r,abs_r,involves_engineered
+payment_stress_index,late_payments,0.9923737152360055,0.9923737152360055,True
+usage_intensity,avg_monthly_gb,0.9442320587339265,0.9442320587339265,True
+dissatisfaction_index,satisfaction_gap,-0.9403245289485274,0.9403245289485274,True
+satisfaction_gap,customer_satisfaction,0.9256479712666602,0.9256479712666602,True
+totalcharges,tenure,0.9128764495035565,0.9128764495035565,False
+has_late_payment,late_payments,0.9020097959571971,0.9020097959571971,True

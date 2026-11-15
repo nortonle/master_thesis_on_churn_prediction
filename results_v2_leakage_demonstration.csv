@@ -1,0 +1,3 @@
+pipeline,cv_auc,cv_auc_std
+correct — SMOTE inside each training fold,0.6608279635851723,0.005159495326341332
+leaky — SMOTE applied before splitting,0.9791554929096581,0.0007400850525693662

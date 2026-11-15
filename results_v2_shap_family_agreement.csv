@@ -1,0 +1,10 @@
+check,result
+Network explained,"ANN (KernelSHAP, sampled)"
+Champion explained,LogisticRegression (LinearSHAP (exact))
+Features compared,38
+Spearman rank correlation of importances,0.509 (p = 0.00111)
+Top-10 drivers in common,4 of 10
+"Top driver, network",risk_segment
+"Top driver, champion",contract_two_year
+"Cost per explanation, network",312.0 ms
+"Cost per explanation, champion",0.007 ms

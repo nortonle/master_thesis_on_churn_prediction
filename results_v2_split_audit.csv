@@ -1,0 +1,5 @@
+set,n,churn_rate,used_for
+train (full),800000,0.0992275,final refit of champion and DL competitors (Part 11)
+dev subsample,200000,0.09923,"Experiments A and B, significance testing (Parts 5, 6, 9)"
+tune subsample,100000,0.09923,Grid / Random / Optuna searches (Part 7)
+test (held out),200000,0.099225,final unbiased evaluation only (Part 11)

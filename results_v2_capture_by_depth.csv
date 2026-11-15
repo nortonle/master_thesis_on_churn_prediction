@@ -1,0 +1,7 @@
+depth,best_by_capture,champion_captured,best_captured,champion_shortfall,champion_is_best
+0.005,XGBoost,425,447,22,False
+0.01,XGBoost,771,816,45,False
+0.02,XGBoost,1373,1426,53,False
+0.05,XGBoost,2821,2899,78,False
+0.1,ANN,4871,4909,38,False
+0.2,DNN,8036,8061,25,False

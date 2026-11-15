@@ -1,0 +1,33 @@
+item,value
+n_rows,1000000
+n_cols,32
+churn_rate,0.099227
+imbalance_ratio,9.077902183881402
+n_train,800000
+n_test,200000
+n_dev,200000
+n_tune,100000
+n_engineered_derived,24
+n_baseline,29
+n_engineered_set,52
+pruned,payment_stress_index
+imbalance_choice,none
+imbalance_auc_spread,0.018921793445122015
+imbalance_recall_spread,0.3685476112284788
+tuning_feature_set,engineered
+champion_candidate,LogisticRegression  [A]
+champion_name,LogisticRegression
+champion_experiment,A_baseline_features
+champion_feature_set,baseline
+champion_confirmed,False
+best_dl_candidate,ANN  [B]
+campaign_share,0.02
+mc_draws,20000
+leakage_optimism,0.3183275293244858
+explainer_kind,LinearSHAP (exact)
+engineered_shap_share,0.0
+negative_control_pass,True
+noise_share,1.973480650072055
+dl_shap_seconds,93.58837854099693
+dl_shap_n,300
+quick_run,False

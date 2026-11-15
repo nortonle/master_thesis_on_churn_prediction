@@ -1,0 +1,2 @@
+dropped,kept,abs_r,|r| with churn (dropped),|r| with churn (kept),reason
+payment_stress_index,late_payments,0.9924,0.0428,0.0451,engineered duplicate of a raw feature

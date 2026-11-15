@@ -1,0 +1,12 @@
+item,value
+platform,macOS-27.0-arm64-arm-64bit
+machine,arm64
+processor,arm
+logical_cores,8
+thread_cap_applied,4
+python,3.12.7
+chip,Apple M1
+ram_gb,16.0
+tensorflow_gpus,/physical_device:GPU:0
+dl_device,GPU (Metal)
+ml_device,CPU
