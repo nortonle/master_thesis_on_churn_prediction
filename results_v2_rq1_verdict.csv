@@ -1,0 +1,13 @@
+measure,value
+Cross-family comparisons,8
+Won by an ML model,4
+Won by a DL model,3
+Not separable,1
+Mean ML advantage in AUC,-0.00193
+Best ML finalist,XGBoost (0.68668)
+Best DL finalist,DNN (0.68395)
+Statistically significant comparisons,12 of 15
+Practically material comparisons,5 of 15
+Significant but not material,7 of 15
+Models separable on practical grounds,"ANN, DNN, DecisionTree, LogisticRegression, RandomForest, XGBoost"
+Spread across the whole finalist set,0.01510 AUC

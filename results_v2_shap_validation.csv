@@ -1,0 +1,6 @@
+validation check,result
+Features comparable to the EDA ranking,23
+"Spearman rank correlation, EDA vs SHAP",0.658 (p = 0.000641)
+Top SHAP driver,contract_two_year (34.8% of attribution)
+Features carrying 80% of attribution,7 of 38
+Engineered share of attribution,0.0%

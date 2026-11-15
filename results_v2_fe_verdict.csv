@@ -1,0 +1,11 @@
+measure,value
+Models improved,5 of 6
+Significant improvements (p<0.05),3
+Significant degradations (p<0.05),1
+"Mean AUC change, ML models",-0.00028
+"Mean AUC change, DL models",+0.00308
+Largest gain,DNN +0.00415 (d_z = 4.11)
+Largest loss,RandomForest -0.00312 (d_z = -1.48)
+Features added,23 (29 -> 52)
+Best model overall after B,LogisticRegression (0.6873)
+PATTERN,"improvement is confined to the models that cannot build ratios internally (DNN, ANN, LogisticRegression); the tree ensembles (DecisionTree, RandomForest, XGBoost) gained nothing, because axis-aligned splits can already approximate these transforms"

@@ -1,0 +1,8 @@
+check,result
+Champion selected on CV,LogisticRegression  [A]
+Top model on the held-out test set,ANN (AUC 0.68513)
+Selection generalised,NO — see below
+"Champion CV AUC (dev sample, repeated)",0.68641
+Champion test AUC (200k unseen),0.68478
+Optimism of the CV estimate,+0.00163
+Test-set spread across all finalists,0.01396 AUC
