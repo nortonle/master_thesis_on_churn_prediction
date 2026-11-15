@@ -178,6 +178,27 @@ for _, r in dev.sort_values(["model", "device"]).iterrows():
                 f"{1000 * r.infer_ms_per_sample:.1f} & {r.online_p50_ms:.1f} \\\\")
 write("tab_device.tex", rows)
 
+# ---- Table: tuned network against the reference models ----------------------
+dlt = read("dl_tuning_test").set_index("model")
+dlf = read("dl_tuning_cv_folds")
+rep = read("repeated_cv_folds").groupby("model").roc_auc.mean()
+seeds = dlt[dlt.index.str.startswith("Tuned network (seed")]
+rows = [
+    f"LR$^{{\\dagger}}$ & {rep['LogisticRegression']:.4f} & {t.loc['LogisticRegression', 'roc_auc']:.4f} & "
+    f"{t.loc['LogisticRegression', 'train_seconds_full']:.0f} & {t.loc['LogisticRegression', 'online_p50_ms']:.1f} \\\\",
+    f"XGB (tuned) & {rep['XGBoost']:.4f} & {t.loc['XGBoost', 'roc_auc']:.4f} & "
+    f"{t.loc['XGBoost', 'train_seconds_full']:.0f} & {t.loc['XGBoost', 'online_p50_ms']:.1f} \\\\",
+    f"ANN (default) & {rep['ANN']:.4f} & {t.loc['ANN', 'roc_auc']:.4f} & "
+    f"{t.loc['ANN', 'train_seconds_full']:.0f} & {t.loc['ANN', 'online_p50_ms']:.1f} \\\\",
+    f"DNN (default) & {rep['DNN']:.4f} & {t.loc['DNN', 'roc_auc']:.4f} & "
+    f"{t.loc['DNN', 'train_seconds_full']:.0f} & {t.loc['DNN', 'online_p50_ms']:.1f} \\\\",
+    f"Tuned network & {dlf.auc_tuned_network.mean():.4f} & {seeds.roc_auc.min():.4f}--{seeds.roc_auc.max():.4f} & "
+    f"{seeds.train_seconds.min():.0f}--{seeds.train_seconds.max():.0f} & {seeds.online_p50_ms.median():.1f} \\\\",
+    f"Tuned network, 3 seeds averaged & -- & {dlt.loc['Tuned network (mean of seeds)', 'roc_auc']:.4f} & "
+    f"{seeds.train_seconds.sum():.0f} & -- \\\\",
+]
+write("tab_dltune.tex", rows)
+
 # ---- Figures ----------------------------------------------------------------
 os.makedirs(os.path.join(HERE, "figures"), exist_ok=True)
 for f in ["fig_9_2_forest", "fig_11_2_test_curves", "fig_8_2_performance_vs_time",

@@ -1,0 +1,21 @@
+item,value
+search_trials,50
+search_minutes,35.51601937429999
+best_search_cv_auc,0.687904994055193
+best_params,"{""feature_set"": ""engineered"", ""n_layers"": 4, ""width"": 16, ""shape"": ""constant"", ""activation"": ""selu"", ""batchnorm"": false, ""dropout"": 0.15903629440354725, ""l2"": 3.168018656701079e-05, ""lr"": 0.0017604286689639937, ""batch_size"": 512, ""wide"": true}"
+cv_auc_logistic,0.6864059286922453
+cv_auc_tuned_network,0.6866372833582809
+cv_mean_diff_network_minus_logistic,0.0002313546660357953
+cv_diff_ci95_low,-0.0002491417838387551
+cv_diff_ci95_high,0.0006656205527465307
+cv_paired_t_p,0.3551899935156996
+cv_folds_network_ahead,10
+cv_n_folds,15
+test_auc_logistic,0.6847781905336842
+test_auc_tuned_network_seed42,0.6845742085464758
+test_auc_tuned_network_ensemble,0.6854242588716211
+test_diff_ci95_low,-0.0008750692527823622
+test_diff_ci95_high,0.0004543191598286172
+test_capture_top2pct,"{""logistic"": 1373, ""tuned_network"": 1367, ""tuned_network_ensemble"": 1384}"
+materiality_threshold,0.005
+smoke,False
